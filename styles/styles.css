@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Staatliches', cursive;
+  background-color: whitesmoke;
+}
+
+h1.title {
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  letter-spacing: 12px;
+}
+
+/* Loader */
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(232, 232, 232, 0.8);
+}
+
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Image Container */
+.image-container {
+  margin: 10px 20%;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+/* Footer Styles */
+.footer {
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  position: fixed;
+  font-size: 0.675rem;
+  align-items: center;
+  justify-content: center;
+}
+
+footer > p {
+  color: #717171;
+}
+
+a, a:visited {
+  color: #717171;
+  text-decoration: none;
+}
+
+.creator {
+  color: #333 !important;
+}
+
+.creator:hover {
+  color: #717171 !important;
+}
+
+p::after {
+  content: "|";
+  color: #333;
+  padding-left: 10px;
+}
+
+aside.socials {
+  width: 3rem;
+  display: flex;
+  margin-left: 0.5rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+.twitter, .twitter:visited,
+.github, .github:visited {
+  color: #717171 ;
+}
+
+.twitter:hover, .github:hover {
+  color: #333;
+}
+
+.fa-twitter, .fa-github {
+  font-size: 0.76rem !important;
+}
+
+/* Media Query: Large Smartphone */
+@media screen and (max-width: 600px) {
+  h1.title {
+    font-size: 2rem;
+  }
+
+  .image-container {
+    margin: 10% 3%;
+  }
+}
